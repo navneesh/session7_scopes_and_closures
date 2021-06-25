@@ -36,4 +36,5 @@ jobs:
           echo test, and deploy your project.
       - name: Test with pytest
         run: |
+          pip install pytest
           pytest test_session7.py
