@@ -4,6 +4,7 @@ import time
 import math
 
 def return_closure(fn, length = 50):
+	"""This function returns a closure that utilizes the nonlocal variable 'length' to check if the doctring in input function has chars > length"""
 	def closure_func():
 		
 		# Raise an error if the function does not contain a docstrong
@@ -16,6 +17,7 @@ def return_closure(fn, length = 50):
 
 
 def ret_closure_fibonacci(last_two=[1,2]):
+	"""This function returns a closure that utilizes the nonlocal variable 'last_two' and return the next fibonaccinumber"""
 	# print(last_two)
 	def fibonacci():
 		nonlocal last_two
@@ -32,6 +34,7 @@ def ret_closure_fibonacci(last_two=[1,2]):
 global_dict_fn_cnt = dict()
 
 def ret_closure_global_list(fn):
+	"""This function returns a closure that utilizes the gloal variable 'global_dict_fn_cnt' to record the executions of function passed as input to this function"""
 	# initializing a counter
 	count = 0
 	def closure_func(*args, **kwargs):
@@ -53,6 +56,7 @@ def ret_closure_global_list(fn):
 
 
 def ret_closure_local_list(fn, my_dict):
+	"""This function returns a closure that utilizes the nonlocal dict variable 'my_dict' to record the executions of function passed as input to this function"""
 	# initializing a counter
 	count = 0
 	def closure_func(*args, **kwargs):
