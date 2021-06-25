@@ -1,5 +1,5 @@
 # Purpose of this project
-This project contains the functions to decide the winner of a poker game. Following functions are defined
+This project contains the functions that return closures to access and work on different kinds of free variables.
 
 # return_closure
 This function returns a closure tha checks  the length of docstring in the input function. It also ensures that the function
