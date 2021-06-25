@@ -2,7 +2,7 @@
 This project contains the functions to decide the winner of a poker game. Following functions are defined
 
 # return_closure
-This function returns a closure tha checks the length of docstring in the input function. It also ensures that the function
+This function returns a closure tha checks  the length of docstring in the input function. It also ensures that the function
 contains a docstring.
 
 # ret_closure_fibonacci
